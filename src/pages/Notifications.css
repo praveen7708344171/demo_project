@@ -1,0 +1,36 @@
+.notifications-page {
+  min-height: 100vh;
+  background: var(--color-bg);
+}
+
+.notif-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.notif-filters {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 24px;
+  overflow-x: auto;
+}
+
+.notif-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.notif-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.notif-group__items {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}

@@ -1,0 +1,11 @@
+.badge-category,
+.badge-deadline,
+.badge-status {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 12px;
+  border-radius: var(--radius-pill);
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+}

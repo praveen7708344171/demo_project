@@ -1,0 +1,232 @@
+/* ═══════════════════════════════════
+   AUTH PAGES (Register + Login)
+   ═══════════════════════════════════ */
+
+.auth-page {
+  display: flex;
+  min-height: 100vh;
+}
+
+.auth-left {
+  flex: 1;
+  background: var(--color-dark);
+  padding: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.auth-left::before {
+  content: '';
+  position: absolute;
+  top: -200px;
+  right: -200px;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background: rgba(255, 107, 53, 0.05);
+}
+
+.auth-left__content {
+  max-width: 420px;
+  position: relative;
+  z-index: 1;
+}
+
+.auth-logo {
+  font-size: 22px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 48px;
+}
+
+.auth-left__headline {
+  font-size: var(--fs-h1);
+  color: #FFFFFF;
+  line-height: 1.3;
+  margin-bottom: 16px;
+}
+
+.auth-left__sub {
+  font-size: var(--fs-h4);
+  color: #7A7A9A;
+  line-height: 1.6;
+  margin-bottom: 32px;
+}
+
+.auth-benefits {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-bottom: 48px;
+}
+
+.auth-benefit {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: var(--fs-body);
+  color: #E8E8F0;
+}
+
+.auth-testimonial {
+  padding: 20px;
+  background: rgba(255,255,255,0.05);
+  border-radius: var(--radius-lg);
+  border-left: 3px solid var(--color-primary);
+}
+
+.auth-testimonial__quote {
+  font-size: 14px;
+  font-style: italic;
+  color: #BFC0D0;
+  margin-bottom: 8px;
+}
+
+.auth-testimonial__author {
+  font-size: 13px;
+  color: #7A7A9A;
+}
+
+/* Right */
+.auth-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 24px;
+  background: var(--color-surface);
+}
+
+.auth-form {
+  width: 100%;
+  max-width: 400px;
+}
+
+.auth-form__header {
+  margin-bottom: 32px;
+}
+
+.auth-form__header h2 {
+  margin-bottom: 4px;
+}
+
+.auth-form__fields {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.role-selector {
+  display: flex;
+  gap: 8px;
+}
+
+.role-pill {
+  flex: 1;
+  height: 44px;
+  border-radius: var(--radius-md);
+  border: 1.5px solid var(--color-border);
+  background: var(--color-surface);
+  color: var(--color-body);
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.role-pill:hover {
+  border-color: var(--color-primary);
+}
+
+.role-pill--active {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+  color: #FFFFFF;
+}
+
+.auth-divider {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 20px 0;
+}
+
+.auth-divider::before,
+.auth-divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--color-border);
+}
+
+.auth-divider span {
+  font-size: var(--fs-small);
+  color: var(--color-muted);
+}
+
+.google-btn {
+  width: 100%;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border: 1.5px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  color: var(--color-dark);
+  font-size: var(--fs-body);
+  font-weight: 500;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.google-btn:hover {
+  background: var(--color-bg);
+  border-color: #CCC;
+}
+
+.auth-switch {
+  text-align: center;
+  margin-top: 20px;
+  font-size: var(--fs-small);
+  color: var(--color-muted);
+}
+
+.auth-switch a {
+  color: var(--color-primary);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.auth-options {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.remember-me {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: var(--fs-small);
+  color: var(--color-body);
+  cursor: pointer;
+}
+
+.remember-me input {
+  accent-color: var(--color-primary);
+  width: 16px;
+  height: 16px;
+}
+
+.forgot-link {
+  font-size: var(--fs-small);
+  color: var(--color-primary);
+  font-weight: 500;
+}

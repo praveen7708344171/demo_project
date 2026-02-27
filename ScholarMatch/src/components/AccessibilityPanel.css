@@ -1,0 +1,124 @@
+.a11y-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.a11y-panel {
+  width: 320px;
+  height: 100vh;
+  background: var(--color-surface);
+  display: flex;
+  flex-direction: column;
+  animation: slideInRight 200ms ease;
+  overflow-y: auto;
+}
+
+.a11y-panel__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  border-bottom: 1px solid var(--color-border);
+  position: sticky;
+  top: 0;
+  background: var(--color-surface);
+  z-index: 1;
+}
+
+.a11y-panel__header h3 {
+  font-size: var(--fs-h3);
+}
+
+.a11y-panel__close {
+  color: var(--color-muted);
+  display: flex;
+  cursor: pointer;
+}
+
+.a11y-panel__body {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.a11y-section {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.a11y-slider {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 0;
+}
+
+.slider-control {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.slider-btn {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-body);
+  cursor: pointer;
+}
+
+.slider-btn:hover {
+  background: var(--color-bg);
+}
+
+.slider-value {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-dark);
+  min-width: 40px;
+  text-align: center;
+}
+
+.theme-pills {
+  display: flex;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.theme-pill {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 10px;
+  border-radius: var(--radius-md);
+  border: 1.5px solid var(--color-border);
+  background: var(--color-surface);
+  color: var(--color-body);
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.theme-pill:hover {
+  border-color: var(--color-primary);
+}
+
+.theme-pill--active {
+  border-color: var(--color-primary);
+  background: var(--color-primary-light);
+  color: var(--color-primary);
+}
